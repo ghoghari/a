@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auction Demo 2</title>
+    <link rel="stylesheet" href="/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+        <section className="container">
+        <!-- <section className="chat_section"> -->
+            <!-- <div className="brand">
+                <img height="40" src="/wassup.jpg" alt="">
+                <h1>Whatsup</h1>
+            </div> -->
+            <div className="row">
+                <div className="col-md-6">
+                    <div><img className="itemImg" src="/pivot.jpg"></div>
+                    <div>
+                        <input type="number" id="text" placeholder="Type a Price.."/>
+                    </div>
+                </div>
+                <div className="col-md-6">
+                    <div style="margin-left: 40%;">
+                        <table style="border: 1px solid;">
+                            <tbody className="message_area">
+                                <tr style="border: 1px solid;">
+                                    <th style="border: 1px solid; font-weight: 700;font-size: 20px;">User</th>
+                                    <th style="border: 1px solid; font-weight: 700;font-size: 20px;">Price</th>
+                                    <th style="border: 1px solid; font-weight: 700;font-size: 20px;">Differance</th>
+                                </tr>
+
+                             </tbody>
+                            </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <script src="/socket.io/socket.io.js"></script>
+    <script type="module" src="/client.js"></script>
+</body>
+</html>
